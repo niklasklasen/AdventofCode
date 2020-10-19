@@ -6,7 +6,17 @@ namespace Day1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("This is the start of Advent of Code 2019 Day 1 challange");
+            // Task
+            //Fuel required to launch a given module is based on its mass. 
+            //Specifically, to find the fuel required for a module, take its mass, divide by three, round down, and subtract 2.
+
+            // Calculation
+            var mass = 12;
+            int fuel = (mass / 3) - 2;
+
+            // Output
+            Console.WriteLine($"module mass: {mass}");
+            Console.WriteLine($"Fuel requierd: {fuel}");
         }
     }
 }
