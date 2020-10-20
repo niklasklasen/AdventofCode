@@ -1,6 +1,6 @@
 # Advent Of Code 2019 C# repo
 
-To create a new csharp project through command prompt, follow these steps:
+To create a new csharp project through terminal for use with VS Code or Github Codespaces, follow these steps:
 
 ```
 dotnet new console
