@@ -7,15 +7,20 @@ namespace Day1
     {
         static void Main(string[] args)
         {
-            List<int> input = new List<int>() {12, 14, 1969, 100756};
-            
+            // Mass input
+            List<int> massinput = new List<int>() {12, 14, 1969, 100756};
+            int fueltot = 0;
+
             // Calculation
-            var mass = 100756;
-            int fuel = (mass / 3) - 2;
+            for(conuter = 0, counter < massinput.conut - 1, counter++)
+            {
+                int fuel = (massinput[conuter] / 3) - 2;
+                int fueltot = fueltot + fuel;
+            };
 
             // Output
             Console.WriteLine($"module mass: {mass}");
-            Console.WriteLine($"Fuel requierd: {fuel}");
+            Console.WriteLine($"Fuel requierd: {fueltot}");
 
             int ans = 2 + 2 + 654 + 33583;
             Console.WriteLine($"Fuel requierd should be {ans}");
