@@ -8,19 +8,24 @@ namespace Day1
         static void Main(string[] args)
         {
             // Mass input
-            List<int> massinput = new List<int>() {12, 14, 1969, 100756};
-            int fueltot = 0;
+            List<int> massInput = new List<int>();
+            massInput.Add(12);
+            massInput.Add(14);
+            massInput.Add(1969);
+            massInput.Add(100756);
+            
+            var fuelTotal = new List<int>();
 
             // Calculation
-            for(int i = 0; i < massinput.conut - 1; i++)
+            for(int i = 0; i < massInput.Count; i++)
             {
-                int fuel = (massinput[i] / 3) - 2;
-                int fueltot = fueltot + fuel;
+                int fuel = (massInput[i] / 3) - 2;
+                fuelTotal.Add(fuel);
             };
+            int sum = fuelTotal.Take(fuelTotal.Count).Sum();
 
             // Output
-            Console.WriteLine($"Fuel requierd: {fueltot}");
-
+            Console.WriteLine(sum);
             int ans = 2 + 2 + 654 + 33583;
             Console.WriteLine($"Fuel requierd should be {ans}");
         }
