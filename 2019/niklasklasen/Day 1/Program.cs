@@ -14,7 +14,7 @@ namespace Day1
             massInput.Add(1969);
             massInput.Add(100756);
             
-            var fuelTotal = new List<int>();
+            var fuelTotal = new List<decimal>();
 
             // Calculation
             for(int i = 0; i < massInput.Count; i++)
@@ -22,7 +22,7 @@ namespace Day1
                 int fuel = (massInput[i] / 3) - 2;
                 fuelTotal.Add(fuel);
             };
-            int sum = fuelTotal.Take(fuelTotal.Count).Sum();
+            int sum = fuelTotal.Sum();
 
             // Output
             Console.WriteLine(sum);
