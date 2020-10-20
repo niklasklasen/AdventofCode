@@ -12,14 +12,13 @@ namespace Day1
             int fueltot = 0;
 
             // Calculation
-            for(conuter = 0, counter < massinput.conut - 1, counter++)
+            for(int i = 0; i < massinput.conut - 1; i++)
             {
-                int fuel = (massinput[conuter] / 3) - 2;
+                int fuel = (massinput[i] / 3) - 2;
                 int fueltot = fueltot + fuel;
             };
 
             // Output
-            Console.WriteLine($"module mass: {mass}");
             Console.WriteLine($"Fuel requierd: {fueltot}");
 
             int ans = 2 + 2 + 654 + 33583;
