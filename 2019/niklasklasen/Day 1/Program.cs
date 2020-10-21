@@ -121,6 +121,27 @@ namespace Day1
         
             // Output
             Console.WriteLine($"Fuel requierd is {fuel}");
+
+            // Second part
+            var checkMass = new List<int>() {1969};
+            var newFuel = 0;
+            var adjFuel = 0;
+            //var adjFuel = 0;
+            // var oldFuel = (checkMass / 3) - 2;
+            // var newFuel = (oldFuel / 3) -2;
+            // Console.WriteLine(oldFuel);
+            // Console.WriteLine(newFuel);
+
+            foreach (var module in checkMass)
+            {
+                newFuel += (module / 3) -2;
+                while (newFuel > 0)
+                {
+                    newFuel = (newFuel / 3 ) - 2;
+                    adjFuel += newFuel; 
+                }
+            }
+            Console.WriteLine(adjFuel);
         }
     }
 }
