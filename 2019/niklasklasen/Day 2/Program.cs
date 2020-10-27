@@ -13,9 +13,14 @@ namespace Day_2
             return array;
         }
 
+        public static int[] Intcode()
+        {
+            int[] optcode = Optcode();
+            return optcode; 
+        }
         public static void Main(string[] args)
         {
-            var numbs = Optcode();
+            var numbs = Intcode();
             foreach (var item in numbs)
             {
                 System.Console.WriteLine(item);
