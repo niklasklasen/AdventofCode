@@ -7,7 +7,7 @@ namespace Day_2
     {
        public static int[] Optcode()
         {
-            int[] array = new int[] {1,0,0,0,99};
+            int[] array = new int[] {1,1,1,4,99,5,6,0,99};
             // array[1] = 12;
             // array[2] = 2;
             return array;
@@ -22,6 +22,14 @@ namespace Day_2
                 if (optcode[i] == 1)
                 {
                     optcode[optcode[i+3]] = optcode[optcode[i+1]] + optcode[optcode[i+2]];
+                }
+                if (optcode[i] == 2)
+                {
+                    optcode[optcode[i+3]] = optcode[optcode[i+1]] * optcode[optcode[i+2]];
+                }
+                if (optcode[i] == 99)
+                {
+                    break;
                 }
                 i = i + 4;
             }
