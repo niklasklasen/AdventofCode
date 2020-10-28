@@ -16,6 +16,15 @@ namespace Day_2
         public static int[] Intcode()
         {
             int[] optcode = Optcode();
+            int i = 0;
+            while (i < optcode.Length - 1)
+            {
+                if (optcode[i] == 1)
+                {
+                    optcode[optcode[i+3]] = optcode[optcode[i+1]] + optcode[optcode[i+2]];
+                }
+                i = i + 4;
+            }
             return optcode; 
         }
         public static void Main(string[] args)
