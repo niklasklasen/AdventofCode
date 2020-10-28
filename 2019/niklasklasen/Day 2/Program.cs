@@ -15,8 +15,8 @@ namespace Day_2
         {
             int[] memory = Memory();
             int i = 0;
-            var noun = 12; // Noun
-            var verb = 2; // Verb
+            var noun = 57; // Noun
+            var verb = 41; // Verb
 
             memory[1] = noun;
             memory[2] = verb;
