@@ -36,13 +36,18 @@ namespace Day_2
                     break;
                 }
                 i = i + 4;
-            }
+            };
+
+            var result = 100 * noun + verb;
+            Console.WriteLine(result);
+
             return memory; 
         }
         public static void Main(string[] args)
         {
             var numbs = Intcode();
-            Console.WriteLine(numbs[0]);
+            Console.WriteLine($"Current = {numbs[0]}");
+            Console.WriteLine("Target  = 19690720");
         }
     }
 }
