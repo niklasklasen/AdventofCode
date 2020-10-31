@@ -6,7 +6,8 @@ namespace Day_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var wire1 = new Wire("WireOne");
+            Console.WriteLine(wire1.Name);
         }
     }
 }
