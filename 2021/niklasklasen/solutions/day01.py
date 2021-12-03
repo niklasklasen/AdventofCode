@@ -1,16 +1,17 @@
-# Advernt Of Code
-# Day 1
+import advent
 
-# Count the number of times a depth measurement increases from the previous measurement. 
+readout = advent.input('2021_01')
 
-from os import read
+n = 0
+depthcount = 0
+nmax = len(readout) - 1
 
-def input(filename):
-    values = open('../input/' + filename + '.txt' , 'r')
-    valuelist = values.read().splitlines()
-    return valuelist
+while(n <= nmax):
+    if readout[n] > readout[n-1]:
+        depthcount = depthcount + 1
+    n = n + 1
+print(depthcount)
 
-readout = input('2021_01')
-
-for line in readout:
-    print(line)
+# Wrong Answers
+# 1296
+# 1297
