@@ -9,8 +9,9 @@ nmax = len(readout) - 1
 while(n <= nmax):
     if readout[n] > readout[n-1]:
         depthcount = depthcount + 1
+        print(readout[n])
     n = n + 1
-print(depthcount)
+print(readout[n])
 
 # Wrong Answers
 # 1296
